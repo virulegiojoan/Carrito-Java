@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+import containers.ContenedorArticulos;
+import menus.MenuLogin;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ContenedorArticulos articulos = new ContenedorArticulos();
+		
+		MenuLogin mLogin = new MenuLogin(sc, articulos);
+		mLogin.iniciarMLogin();
+	}
+}
